@@ -11,17 +11,9 @@
     <link rel="stylesheet" href="../css/P01.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/P01.js"></script>
     <title>Document</title>
-    <script>
-        $(document).ready(function(){
-            $(".visual .btn a").on('mouseenter', function() {
-                $(this).find("img").attr("src", $(this).attr("src").replace(".png","_w.png"));
-            }).on('mouseleave', function() {
-                $(this).find("img").attr("src", $(this).attr("src").replace("_w.png",".png"));
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -70,20 +62,48 @@
             </p>
         </div>
     </header>
+    <!-- 비주얼영역 시작 -->
     <div class="visual">
-        <div style="background:url('../img/P01_visual01.jpg')no-repeat 50% 50% / 2000px">
+        <div style="background:url('../img/p01/visual01_pc.jpg')no-repeat 50% 50% / 2000px;">
             <p class="btn">
-                <a href="#" class="orang"><img src="../img/icon_call.png" alt="헬프라인 아이콘">헬프라인 1336(무료)</a>
-                <a href="#" class="blue"><img src="../img/icon_net.png" alt="넷라인 아이콘">도박문제 넷라인</a>
+                <a href="#" class="orang"><img src="../img/p01/icon_call.png" alt="헬프라인 아이콘">헬프라인 1336(무료)</a>
+                <a href="#" class="blue"><img src="../img/p01/icon_net.png" alt="넷라인 아이콘">도박문제 넷라인</a>
             </p>
         </div>
-        <div style="background:url('../img/P01_visual02.jpg')no-repeat 50% 50% / 2000px">
+        <div style="background:url('../img/p01/visual02_pc.jpg')no-repeat 50% 50% / 2000px;">
             <p class="btn">
-                <a href="#" class="orang"><img src="../img/icon_call.png" alt="헬프라인 아이콘">헬프라인 1336(무료)</a>
-                <a href="#" class="blue"><img src="../img/icon_net.png" alt="넷라인 아이콘">도박문제 넷라인</a>
+                <a href="#" class="orang"><img src="../img/p01/icon_call.png" alt="헬프라인 아이콘">헬프라인 1336(무료)</a>
+                <a href="#" class="blue"><img src="../img/p01/icon_net.png" alt="넷라인 아이콘">도박문제 넷라인</a>
             </p>
         </div>
     </div>
+    <!-- 비주얼영역 끝 -->
+
+    <!-- 중간 컨텐츠영역 시작 -->
+    <div class="midCont">
+        <div class="contents">
+            <div class="popQuick">
+                <div class="popBox">팝업1</div>
+                <div class="quickBox">
+                    <p class="bubble">혹시 내가? <br/><span>도박 중독인지 확인</span>해보고 싶으세요?</p>
+                    <p class="btn">
+                        <a href="#"><span>도박문제 선별검사 (CPGI)</span>자가점검을 통해 자신의 상태를 체크해 보세요.</a>
+                        <a href="#"><span>청소년 도박문제 선별척도 (CAGI)</span>청소년들의 도박문제를 점검해 보세요.</a>
+                    </p>
+                    <p class="bubble B">직접 상담하러 <br/>가까운 <span>지역 센터</span>로 가고싶어요!</p>
+                    <p class="sel">
+                        <select>
+                            <option>대전 충남 센터</option>
+                        </select>
+                        <a href="#">검색</a>
+                    </p>
+                    <p><a href="#">민간 서비스 기관은 여기서 확인하세요!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 중간 컨텐츠영역 끝 -->
+
 
     <script>
         $('.visual').slick({
